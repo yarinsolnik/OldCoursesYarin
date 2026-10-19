@@ -26,10 +26,5 @@ logic cout;
 		
 		#2000;
 	end
-	
-
-
-
-// End of your code
 
 endmodule
