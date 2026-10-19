@@ -1,14 +1,12 @@
-// 1-bit ALU template
+// 1-bit ALU
 module alu1bit (
-    input logic a,           // Input bit a
-    input logic b,           // Input bit b
-    input logic cin,         // Carry in
-    input logic [1:0] op,    // Operation
-    output logic s,          // Output S
-    output logic cout        // Carry out
+    input logic a,           
+    input logic b,           
+    input logic cin,        
+    input logic [1:0] op,    
+    output logic s,          
+    output logic cout        
 );
-
-// Put your code here
 	logic g1,g2,g3,g4,g5,g6,g7;
 	OR2 #(.Tpdlh(9),.Tpdhl(9)) or1 (.Z(g1),.A(a),.B(b));
 	NAND2 #(.Tpdlh(10),.Tpdhl(10)) nand1(.Z(g2),.A(g1),.B(g1));
@@ -18,9 +16,4 @@ module alu1bit (
 	fas  fas1(.s(g6),.cout(cout),.a(a),.b(b),.cin(cin),.a_ns(g5));
 	mux4 mux1(.z(s),.d0(g2),.d1(g4),.d2(g6),.d3(g6),.sel(op));
 	
-	
-
-
-// End of your code
-
 endmodule
