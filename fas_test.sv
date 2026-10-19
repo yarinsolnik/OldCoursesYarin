@@ -1,13 +1,10 @@
-// Full Adder/Subtractor test bench template
+// Full Adder/Subtractor test bench template please note this only examines one input to output change
 module fas_test;
-
-// Put your code here
-// ------------------
-	logic a;           // Input bit a
-    logic b;           // Input bit b
-    logic cin;         // Carry in
-    logic a_ns;        // A_nS (add/not subtract) control
-    logic s;          // Output S
+	logic a;           
+    logic b;           
+    logic cin;         
+    logic a_ns;        
+    logic s;         
     logic cout;
 	// Module instantaion
 	fas uut(
