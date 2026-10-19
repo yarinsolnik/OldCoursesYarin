@@ -1,4 +1,4 @@
-// 4->1 multiplexer test bench template
+//This is a 4-1 Mux test that examines only one of the inputs changes
 module mux4_test;
 	logic d0;
 	logic d1;
