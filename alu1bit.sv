@@ -1,4 +1,5 @@
-// 1-bit ALU
+// 1-bit ALU that That has 4 actions:Addition,Subtraction,XOR,OR
+// op[1:0] is the selector that decides which action is chosen 
 module alu1bit (
     input logic a,           
     input logic b,           
