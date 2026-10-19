@@ -1,4 +1,4 @@
-// 64-bit ALU template
+// This is an ALU 64 bit in accordence with the 1 bit ALU
 module alu64bit (
     input logic [63:0] a,    // Input bit a
     input logic [63:0] b,    // Input bit b
@@ -7,8 +7,6 @@ module alu64bit (
     output logic [63:0] s,   // Output S
     output logic cout        // Carry out
 );
-
-// ------------------
 	logic [64:0] out;
 	assign out[0]=cin;
 	genvar i;
