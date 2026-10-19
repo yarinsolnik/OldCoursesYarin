@@ -1,7 +1,5 @@
 // 64-bit ALU test bench template
 module alu64bit_test;
-
-// Put your code here
 logic [63:0] a;
 logic [63:0] b;
 logic cin;
